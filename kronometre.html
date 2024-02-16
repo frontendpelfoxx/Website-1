@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>TAIHL | Kronometre</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body onload="startTime()">
+    <div class="container">
+      <div class="sidebar-container" id="sidebar">
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="index.html"
+                ><span class="material-symbols-outlined">schedule</span>
+                <p>Saat</p></a
+              >
+            </li>
+            <li>
+              <a href="timer.html"
+                ><span class="material-symbols-outlined">hourglass</span>
+                <p>Zamanlayıcı</p></a
+              >
+            </li>
+            <li>
+              <a href="kronometre.html"
+                ><span class="material-symbols-outlined">timer</span>
+                <p>Kronometre</p></a
+              >
+            </li>
+          </ul>
+        </div>
+        <button id="toggler">
+          <span class="material-symbols-outlined" id="toggler-icon"
+            >arrow_back</span
+          >
+        </button>
+      </div>
+      <div class="main-area">
+        <h1 id="timer">00:00:00</h1>
+        <div class="buttons">
+          <button id="start-btn" onclick="startStopwatch()">Başlat</button>
+          <button id="stop-btn" onclick="stopStopwatch()">Durdur</button>
+          <button id="reset-btn" onclick="resetStopwatch()">Sıfırla</button>
+        </div>
+      </div>
+    </div>
+    <div class="full-screen" onclick="toggleFullScreen()">
+      <span class="material-symbols-outlined" id="fs">fullscreen</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="kronometre.js"></script>
+  </body>
+</html>
